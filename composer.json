@@ -1,0 +1,44 @@
+{
+  "name": "jgu/row-visibility-mapper",
+  "description": "Row visibility manager package - allows the developer to easily filter out rows of any table depending upon different fields mapped to the user.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Karan",
+      "email": "karankumar@jgu.edu.in",
+      "homepage": "https://jgu.edu.in"
+    }
+  ],
+  "homepage": "https://github.com/jgu/row-visibility-mapper",
+  "keywords": [
+    "Laravel",
+    "RowVisibilityMapper"
+  ],
+  "require": {
+        "illuminate/support": "^9.52"
+  },
+  "require-dev": {
+      "orchestra/testbench": "^7.41",
+      "phpunit/phpunit": "^9.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jgu\\RowVisibilityMapper\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jgu\\RowVisibilityMapper\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Jgu\\RowVisibilityMapper\\RowVisibilityMapperServiceProvider"
+      ],
+      "aliases": {
+        "RowVisibilityMapper": "Jgu\\RowVisibilityMapper\\Facades\\RowVisibilityMapper"
+      }
+    }
+  }
+}
